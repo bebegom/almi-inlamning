@@ -5,6 +5,9 @@ body {
 
 header {
     background-color: #e6e6e6;
+    width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 .header {
@@ -24,8 +27,9 @@ header {
     font-size: 25px;
 }
 
-nav {
+#myLinks {
     background-color: white;
+    display: none;
 }
 
 .nav {
@@ -36,6 +40,7 @@ nav {
 .nav a {
     padding: 20px;
     border-bottom: 2px #e6e6e6 solid;
+    color: black;
 }
 
 .nav a:active {
@@ -47,30 +52,83 @@ a {
     color: black;
 }
 
+main {
+    margin-top: 96px;
+}
+
 .sec-1 {
     background-color: #870aa0;
     color: white;
     padding: 20px;
 }
 
-h2 {
+.sec-1 a {
+    color: white;
+}
+
+.sec-1 a:hover {
+    text-decoration: underline;
+}
+
+h1 {
     font-weight: 500;
     font-size: 30px;
 }
 
-h3 {
+h2 {
     font-weight: 200;
     font-size: 22px;
 }
 
-h4 {
+h3 {
     font-weight: 100;
     font-size: 18px;
+}
+
+.steps {
+    width: 100%;
+}
+
+.whatmore {
+    background-color: #00F0AF;
+    /* background-image: url("grafiska-element/plus-backgrund-03.svg");
+    background-repeat: no-repeat; */
+    display: flex;
+}
+
+.moreplus {
+    width: 50%;
+}
+
+.prenumerera {
+    background-color: #AAE6FF;
+    text-align: center;
+}
+
+.contacts {
+    background-color: #2819ff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactsItems {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts a {
+    color: white;
+    margin-bottom: 20px;
 }
 
 footer {
     margin: auto;
     display: flex;
-    justify-content: space-between;
-    width: 50%;
+    justify-content: space-around;
+}
+
+footer .fab {
+    font-size: 50px;
+    margin: 10px;
 }
