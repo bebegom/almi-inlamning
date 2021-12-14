@@ -6,14 +6,17 @@ body {
 header {
     background-color: #e6e6e6;
     width: 100%;
+
     position: fixed;
     top: 0;
+
 }
 
-.header {
+.headerFlex {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 20px 20px 20px 20px;
 }
 
@@ -54,7 +57,7 @@ a {
 
 nav div a:hover {
     text-decoration: underline;
-    padding-left: 2%; 
+    padding-left: 2%;
 }
 
 main {
@@ -65,17 +68,15 @@ section {
     padding: 20px;
 }
 
-main .main section a:hover {
+main section a:hover {
     text-decoration: underline;
-    padding-left: 2%;
 }
 
-.sec-1 {
+.firstOfferSection {
     background-color: #870aa0;
-    color: white;
 }
 
-.sec-1 a {
+.firstOfferSection a {
     color: white;
 }
 
@@ -101,14 +102,14 @@ h3 {
     width: 45%;
 }
 
-.people {
+.img-of-people {
     background-image: url(images/peopole2.png);
     background-size: cover;
     padding: 50px;
 
 }
 
-.people h1 {
+.img-of-people h1 {
     background-color: rgb(0, 0, 0, 0.5);
     color: white;
     margin: 20% 7% 7% 7%;
@@ -116,20 +117,24 @@ h3 {
     padding: 30px 70px 20px 30px;
 }
 
-.sec-3 {
+.more-about-almi {
     background-color: #e6e6e6;
 }
 
-/* .woman {
-    display: block;
-    width: 50%;
-    margin-left: 50%;
-    margin-bottom: -20px;
-} */
+.medalImg {
+    width: 15%;
+}
 
+.secondOfferSection {
+    background-color: #e6e6e6;
+}
 
 .stepsimg {
     width: 100%;
+}
+
+.stepImg {
+    width: 15%;
 }
 
 .whatmore {
@@ -137,12 +142,10 @@ h3 {
 }
 
 .moreplus {
-    width: 50%;
-}
-
-.negativeMargin {
-    margin-bottom: -13px;
-    margin-left: 200px;
+    width: 45%;
+    /* margin-bottom: -30px;
+    margin-left: 45%; */
+    margin-left: -10%;
 }
 
 .prenumerera {

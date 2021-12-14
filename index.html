@@ -12,10 +12,10 @@
 
     <header>
 
-        <div class="header">
+        <div class="headerFlex">
             <img class="logo" src="grafiska-element/logo-02.svg" alt="logo">
 
-            <div class="header-btns">
+            <div class="header-btns-container">
                 <a href="#"><i class="fas fa-search search"></i></a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars bars"></i></a>
             </div>
@@ -24,10 +24,10 @@
         <nav id="myLinks">
 
             <div class="nav">
-                <a href="">erbjudande</a>
+                <a href="#secondOfferSection">erbjudande</a>
                 <a href="">om oss</a>
-                <a href="">utmärkelser</a>
-                <a href="">steg/process</a>
+                <a href="#medal">utmärkelser</a>
+                <a href="#steps">steg/process</a>
                 <a href="#prenumerera">prenumerera</a>
                 <a href="">kontakta oss</a>
                 <a href=""><i class="fas fa-globe-europe"></i>in English</a>
@@ -40,11 +40,10 @@
 
 
     <main>
-        <div class="main">
 
-            <section class="sec-1">
+            <section class="firstOfferSection">
 
-                <a href="">
+                <a class="aHover" href="#secondOfferSection">
                     <h1>Rusta ditt företag för framtiden</h1>
                     <h2>Låna upp till 50 000 kr</h2>
                     <h3>läs mer</h3>
@@ -54,12 +53,12 @@
 
             </section>
 
-            <section class="people">
+            <section class="img-of-people">
                 <h1>Sveriges mest aktiva företagsutvecklare</h1>
             </section>
 
-            <section class="sec-3">
-                <a href="">
+            <section class="more-about-almi">
+                <a class="aHover" href="">
                     <h1>läs mer om Almi</h1>
                     <h2>Företagslån, riskkapital och affärsutveckling för växande företag</h2>
                 </a>
@@ -68,23 +67,98 @@
 
             </section>
 
-            <section>
-                <i class="fas fa-medal"></i>
+            <section id="medal">
+                <a href=""><h1>Nyheter</h1></a>
+
+                <div class="medal-article-container">
+                    <article class="medal-article">
+                        <img class="medalImg" src="images/deal.jpg" alt="">
+
+                        <div>
+                            <h3>Digitaltolk kammade hem priset Årets Framtisgasell och Supergasell</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam facere id, soluta amet sint maiores vitae accusantium hic officiis commodi saepe velit exercitationem odit, aliquam sequi? Exercitationem dolorem id excepturi.</p>
+                        </div>
+                    </article>
+
+                    <article class="medal-article">
+                        <img class="medalImg" src="images/medal.jpg" alt="">
+
+                        <div>
+                            <h3>Almi blir utsedda till ett av Sveriges Karriärföretag 2022</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam facere id, soluta amet sint maiores vitae accusantium hic officiis commodi saepe velit exercitationem odit, aliquam sequi? Exercitationem dolorem id excepturi.</p>
+                        </div>
+                    </article>
+
             </section>
 
-            <section>
+            <section id="secondOfferSection" class="secondOfferSection">
+                <h1>Ta lån upp till 50 000 kr</h1>
+                <p>Vi hjälper dig och ditt nya företag (upp till 3 år) växa. Välj en plan medan och hör av dig till oss.</p>
+                
+                <div class="loans-container">
+
+                    <div class="loan s-loan">
+                        <h3>10 000</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, aspernatur quas! Ipsum dolore culpa at beatae maxime sint officiis minima sapiente nihil, voluptates rerum enim quas laborum dignissimos tempore? Numquam!</p>
+                    </div>
+                    
+                    <div class="loan m-loan">
+                        <h3>25 000</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laudantium dolor, voluptate, atque qui eius facere maiores necessitatibus nisi perspiciatis quaerat temporibus cupiditate. Adipisci rerum, eveniet consequatur fuga nam velit?</p>
+                    </div>
+                    
+                    <div class="loan l-loan">
+                        <h3>50 000</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, corporis exercitationem maiores pariatur temporibus perferendis aperiam adipisci quibusdam odit consectetur ipsam eligendi facilis expedita hic, sint debitis velit porro. Distinctio.</p>
+                    </div>
+
+                </div>
+
+                <button>Låna nu</button>
+
+            </section>
+
+            <section id="steps" class="steps">
 
                 <img class="stepsimg" src="grafiska-element/steg.png" alt="">
+
+                <div class="oneStep">
+                    <img class="stepImg" src="grafiska-element/step1-04.svg" alt="">
+
+                    <h1>Skicka in din låneansökan</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus dignissimos commodi magnam itaque labore beatae veritatis recusandae odit numquam sapiente quod enim doloremque perferendis ratione nobis, ab distinctio non!</p>
+                </div>
+
+                <div class="oneStep">
+                    <img class="stepImg" src="grafiska-element/step2-04.svg" alt="">
+
+                    <h1>Vi går igenom din ansökan</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus dignissimos commodi magnam itaque labore beatae veritatis recusandae odit numquam sapiente quod enim doloremque perferendis ratione nobis, ab distinctio non!</p>
+                </div>
+
+                <div class="oneStep">
+                    <img class="stepImg" src="grafiska-element/step3-04.svg" alt="">
+
+                    <h1>Bli kontaktad av oss</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus dignissimos commodi magnam itaque labore beatae veritatis recusandae odit numquam sapiente quod enim doloremque perferendis ratione nobis, ab distinctio non!</p>
+                </div>
+
+                <div class="oneStep">
+                    <img class="stepImg" src="grafiska-element/step4-04.svg" alt="">
+
+                    <h1>Ärendet behandlas</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus dignissimos commodi magnam itaque labore beatae veritatis recusandae odit numquam sapiente quod enim doloremque perferendis ratione nobis, ab distinctio non!</p>
+                </div>
 
             </section>
 
             <section class="whatmore">
-                <a href="">
+                <a class="aHover" href="">
                     <h1>Vad mer kan Almi erbjuda?</h1>
                     <h2>möten, seminarium, dokument osv.</h2>
                 </a>
 
-                <img class="moreplus negativeMargin" src="grafiska-element/plus-02.svg" alt="">
+                <img class="moreplus" src="grafiska-element/pil-lila-02.svg" alt="">
             </section>
 
             <section id="prenumerera" class="prenumerera">
@@ -105,7 +179,7 @@
 
             </section>
 
-        </div>
+
     </main>
 
     <footer>
@@ -139,9 +213,9 @@
         </section>
 
         <section class="socialMedia">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-youtube"></i>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
         </section>
     </footer>
 
