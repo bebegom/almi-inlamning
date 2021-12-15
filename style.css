@@ -63,7 +63,15 @@ header {
 }
 
 .nav a:after {
-    content: ">";
+    content: "";
+    background-image:url(images/linkpilsvart.png);
+    background-size: 100% 100%;
+    display: inline-block;
+
+    margin-left: 5px;
+
+    width: 12px;
+    height: 10px;
 }
 
 .nav a:active {
@@ -174,7 +182,6 @@ h3 {
     padding: 20px 35px 17px 35px;
     font-family: sofia pro;
     font-size: 1.2em;
-    /* width: 70px; */
 }
 
 .steps {
@@ -195,8 +202,6 @@ h3 {
 
 .moreplus {
     width: 45%;
-    /* margin-bottom: -30px;
-    margin-left: 45%; */
     margin-left: -10%;
 }
 
@@ -223,6 +228,22 @@ footer {
 .contacts a {
     color: white;
     margin-bottom: 20px;
+}
+
+.contacts a:after {
+    content: "";
+    background-image:url(images/linkpilvitleft.png);
+    background-size: 100% 100%;
+    display: inline-block;
+
+    margin-left: 5px;
+  
+    width: 10px;
+    height: 12px;
+}
+
+.contacts a:hover {
+    text-decoration: underline;
 }
 
 .socialMedia {
