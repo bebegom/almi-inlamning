@@ -12,26 +12,40 @@
 
     <header>
 
-        <div class="headerFlex">
+        <div class="headerFlex deskopWidth">
             <img class="logo" src="grafiska-element/logo-02.svg" alt="logo">
 
             <div class="header-btns-container">
-                <a href="#"><i class="fas fa-search search"></i></a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars bars"></i></a>
+
+                <span id="searchArea">
+                <!-- <a class="searchText" href=""> -->
+                    <input id="searchInput" type="search" name="" id="">
+                    <span id="searchSpan" class="mobile-none">Sök</span>
+                    <i onclick="showSearchInput()" class="fas fa-search search"></i>
+                <!-- </a> -->
+                </span>
+
+                <a class="mobile-none" href="">Almi Invest</a>
+
+                <a class="mobile-none" href="">In English<i class="fas fa-globe-europe"></i></a>
+
+                <a class="mobile-none" href="">Logga in<i class="fas fa-lock"></i></a>
+
+                <a href="javascript:void(0);" class="icon deskop-none" onclick="myFunction()"><i class="fas fa-bars bars"></i></a>
             </div>
         </div>
 
         <nav id="myLinks">
 
-            <div class="nav">
+            <div class="nav deskopWidth">
                 <a href="#secondOfferSection">erbjudande</a>
                 <a href="">om oss</a>
                 <a href="#medal">utmärkelser</a>
                 <a href="#steps">steg/process</a>
                 <a href="#prenumerera">prenumerera</a>
                 <a href="">kontakta oss</a>
-                <a href=""><i class="fas fa-globe-europe"></i>in English</a>
-                <a href=""><i class="fas fa-lock"></i>logga in</a>
+                <a class="deskop-none" href="">In English<i class="fas fa-globe-europe"></i></a>
+                <a class="deskop-none" href="">Logga in<i class="fas fa-lock"></i></a>
             </div>
     
         </nav>
@@ -41,12 +55,12 @@
 
     <main>
 
-            <section class="firstOfferSection">
+            <section class="firstOfferSection sectionWidth">
 
-                <a class="aHover" href="#secondOfferSection">
-                    <h1>Rusta ditt företag för framtiden</h1>
-                    <h2>Låna upp till 50 000 kr</h2>
-                    <h3>läs mer</h3>
+                <a href="#secondOfferSection">
+                    <h1 id="h1">Rusta ditt företag för framtiden</h1>
+                    <h2 id="h2">Låna upp till 50 000 kr</h2>
+                    <h3 id="h3">läs mer</h3>
                 </a>
 
                 <img class="negativeMargin20" src="grafiska-element/pil-upp2-02.svg" alt="">
@@ -57,7 +71,7 @@
                 <h1>Sveriges mest aktiva företagsutvecklare</h1>
             </section>
 
-            <section class="more-about-almi">
+            <section class="more-about-almi sectionWidth">
                 <a class="aHover" href="">
                     <h1>läs mer om Almi</h1>
                     <h2>Företagslån, riskkapital och affärsutveckling för växande företag</h2>
@@ -67,93 +81,113 @@
 
             </section>
 
-            <section id="medal">
+            <section id="medal" class="deskopWidth">
                 <a href=""><h1>Nyheter</h1></a>
 
                 <div class="medal-article-container">
-                    <article class="medal-article">
-                        <img class="medalImg" src="images/deal.jpg" alt="">
+                    <article class="medal-article articleFlex">
+                        <img class="medalImg articleImgMargin" src="images/deal.jpg" alt="">
 
                         <div>
-                            <h3>Digitaltolk kammade hem priset Årets Framtisgasell och Supergasell</h3>
+                            <h3 class="articleHeadingMarginTop">Digitaltolk kammade hem priset Årets Framtisgasell och Supergasell</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam facere id, soluta amet sint maiores vitae accusantium hic officiis commodi saepe velit exercitationem odit, aliquam sequi? Exercitationem dolorem id excepturi.</p>
                         </div>
                     </article>
 
-                    <article class="medal-article">
-                        <img class="medalImg" src="images/medal.jpg" alt="">
+                    <article class="medal-article articleFlex">
+                        <img class="medalImg articleImgMargin" src="images/medal.jpg" alt="">
 
                         <div>
-                            <h3>Almi blir utsedda till ett av Sveriges Karriärföretag 2022</h3>
+                            <h3 class="articleHeadingMarginTop">Almi blir utsedda till ett av Sveriges Karriärföretag 2022</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam facere id, soluta amet sint maiores vitae accusantium hic officiis commodi saepe velit exercitationem odit, aliquam sequi? Exercitationem dolorem id excepturi.</p>
                         </div>
                     </article>
 
             </section>
 
-            <section id="secondOfferSection" class="secondOfferSection">
-                <h1>Ta lån upp till 50 000 kr</h1>
-                <p>Vi hjälper dig och ditt nya företag (upp till 3 år) växa. Välj en plan medan och hör av dig till oss.</p>
-                
-                <div class="loans-container">
+            <section id="secondOfferSection" class="secondOfferSection ">
+                <div class="deskopWidth sectionWidth">
 
-                    <div class="loan s-loan">
-                        <h3>10 000</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, aspernatur quas! Ipsum dolore culpa at beatae maxime sint officiis minima sapiente nihil, voluptates rerum enim quas laborum dignissimos tempore? Numquam!</p>
-                    </div>
+                    <h1>Ta lån upp till 50 000 kr</h1>
+                    <p>Vi hjälper dig och ditt nya företag (upp till 3 år) växa. Välj en plan medan och hör av dig till oss.</p>
                     
-                    <div class="loan m-loan">
-                        <h3>25 000</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laudantium dolor, voluptate, atque qui eius facere maiores necessitatibus nisi perspiciatis quaerat temporibus cupiditate. Adipisci rerum, eveniet consequatur fuga nam velit?</p>
+                    <div class="loans-container">
+
+                        <div class="loan s-loan">
+                            <h3>10 000</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, aspernatur quas! Ipsum dolore culpa at beatae maxime sint officiis minima sapiente nihil, voluptates rerum enim quas laborum dignissimos tempore? Numquam!</p>
+                        </div>
+                        
+                        <div class="loan m-loan">
+                            <h3>25 000</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laudantium dolor, voluptate, atque qui eius facere maiores necessitatibus nisi perspiciatis quaerat temporibus cupiditate. Adipisci rerum, eveniet consequatur fuga nam velit?</p>
+                        </div>
+                        
+                        <div class="loan l-loan">
+                            <h3>50 000</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, corporis exercitationem maiores pariatur temporibus perferendis aperiam adipisci quibusdam odit consectetur ipsam eligendi facilis expedita hic, sint debitis velit porro. Distinctio.</p>
+                        </div>
+
                     </div>
-                    
-                    <div class="loan l-loan">
-                        <h3>50 000</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, corporis exercitationem maiores pariatur temporibus perferendis aperiam adipisci quibusdam odit consectetur ipsam eligendi facilis expedita hic, sint debitis velit porro. Distinctio.</p>
-                    </div>
+
+                    <!-- <form id="sendForm" action=""> -->
+                        <!-- <input class="textInput" type="email" name="" id="" placeholder="Din email"> -->
+
+                        <!-- <input class="textInput" type="text" name="" id="" placeholder="Beskriv din ansökan..."> -->
+
+                        <input class="ctaBtn" type="submit" value="Skicka in">
+                    <!-- </form> -->
 
                 </div>
-
-                <button>Låna nu</button>
-
             </section>
 
-            <section id="steps" class="steps">
+            <section id="steps" class="steps deskopWidth">
 
                 <img class="stepsimg" src="grafiska-element/steg.png" alt="">
 
-                <div class="oneStep">
-                    <img class="stepImg" src="grafiska-element/step1-04.svg" alt="">
+                <div class="oneStep articleFlex">
+                    <img class="stepImg articleImgMargin" src="grafiska-element/step1-04.svg" alt="">
 
-                    <h1>Skicka in din låneansökan</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus dignissimos commodi magnam itaque labore beatae veritatis recusandae odit numquam sapiente quod enim doloremque perferendis ratione nobis, ab distinctio non!</p>
+                    <div class="stepText">
+                        <h1 class="articleHeadingMarginTop">Skicka in din låneansökan</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus dignissimos commodi magnam itaque labore beatae veritatis recusandae odit numquam sapiente quod enim doloremque perferendis ratione nobis, ab distinctio non!</p>
+                    </div>
                 </div>
 
-                <div class="oneStep">
-                    <img class="stepImg" src="grafiska-element/step2-04.svg" alt="">
+                <div class="oneStep articleFlex">
+                    <img class="stepImg articleImgMargin" src="grafiska-element/step2-04.svg" alt="">
 
-                    <h1>Vi går igenom din ansökan</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus dignissimos commodi magnam itaque labore beatae veritatis recusandae odit numquam sapiente quod enim doloremque perferendis ratione nobis, ab distinctio non!</p>
+                    <div class="stepText">
+                        <h1 class="articleHeadingMarginTop">Vi går igenom din ansökan</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus dignissimos commodi magnam itaque labore beatae veritatis recusandae odit numquam sapiente quod enim doloremque perferendis ratione nobis, ab distinctio non!</p>
+                    </div>
                 </div>
 
-                <div class="oneStep">
-                    <img class="stepImg" src="grafiska-element/step3-04.svg" alt="">
+                <div class="oneStep articleFlex">
+                    <img class="stepImg articleImgMargin" src="grafiska-element/step3-04.svg" alt="">
 
-                    <h1>Bli kontaktad av oss</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus dignissimos commodi magnam itaque labore beatae veritatis recusandae odit numquam sapiente quod enim doloremque perferendis ratione nobis, ab distinctio non!</p>
+                    <div class="stepText">
+                        <h1 class="articleHeadingMarginTop">Bli kontaktad av oss</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus dignissimos commodi magnam itaque labore beatae veritatis recusandae odit numquam sapiente quod enim doloremque perferendis ratione nobis, ab distinctio non!</p>
+                    </div>
                 </div>
 
-                <div class="oneStep">
-                    <img class="stepImg" src="grafiska-element/step4-04.svg" alt="">
+                <div class="oneStep articleFlex">
+                    <img class="stepImg articleImgMargin" src="grafiska-element/step4-04.svg" alt="">
 
-                    <h1>Ärendet behandlas</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus dignissimos commodi magnam itaque labore beatae veritatis recusandae odit numquam sapiente quod enim doloremque perferendis ratione nobis, ab distinctio non!</p>
+                    <div class="stepText">
+                        <h1 class="articleHeadingMarginTop">Ärendet behandlas</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus dignissimos commodi magnam itaque labore beatae veritatis recusandae odit numquam sapiente quod enim doloremque perferendis ratione nobis, ab distinctio non!</p>
+                    </div>
                 </div>
+
+                <input class="ctaBtn" type="submit" value="Skicka in">
+
 
             </section>
 
-            <section class="whatmore">
-                <a class="aHover" href="">
+            <section class="whatmore sectionWidth">
+                <a href="">
                     <h1>Vad mer kan Almi erbjuda?</h1>
                     <h2>möten, seminarium, dokument osv.</h2>
                 </a>
@@ -163,11 +197,12 @@
 
             <section id="prenumerera" class="prenumerera">
                 
-                <form action="">
-                    <h2>Prenumerera på våra utskick</h2>
-
-                    <input type="text" placeholder="example@email.com">
-                    <button><label for="">Prenumerera</label></button>
+                <h2>Prenumerera på våra utskick</h2>
+                
+                <form class="deskopWidth prenumereraForm" action="">
+                    <input class="textInput formDisplayBlock" type="text" placeholder="example@email.com">
+                    <button class="ctaBtn formDisplayBlock"><label for="">Prenumerera</label></button>
+                </form>
 
                     <p>
                         För att prenumerera på vårt nyhetsbrev och andra utskick behöver du godkänna vår hantering av personuppgifter.
@@ -175,7 +210,6 @@
 
                     <input type="checkbox" name="" id="">
                     <label for="">Jag samtycker</label>
-                </form>
 
             </section>
 
@@ -186,7 +220,7 @@
 
         <section class="contacts">
                
-            <div class="contactsItems">
+            <div class="contactsItem">
                 <h3>Våra tjänster</h3>
 
                 <a href="">Affärsutveckling</a>
@@ -194,7 +228,7 @@
                 <a href="">Almi Invest</a>
             </div>
 
-            <div class="contactsItems">
+            <div class="contactsItem">
                 <h3>Kort om Almi</h3>
 
                 <a href="">Lån</a>
@@ -202,7 +236,7 @@
                 <a href="">Riskkapital</a>
             </div>
 
-            <div class="contactsItems">
+            <div class="contactsItem">
                 <h3>Kontakt</h3>
 
                 <a href="">Kontakta oss</a>

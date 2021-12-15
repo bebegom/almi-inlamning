@@ -17,7 +17,7 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
 }
 
  .logo {
@@ -25,9 +25,25 @@ header {
     margin: 0;
 }
 
+.mobile-none {
+    display: none;
+}
+
 .search, .bars {
     margin-left: 20px;
     font-size: 25px;
+}
+
+#searchArea:hover {
+    cursor: pointer;
+}
+
+#searchInput {
+    border: none;
+    padding: 5px 10px 5px 10px;
+    font-family: sofia pro;
+    font-size: 1.1em;
+    display: none;
 }
 
 #myLinks {
@@ -46,8 +62,16 @@ header {
     color: black;
 }
 
+.nav a:after {
+    content: ">";
+}
+
 .nav a:active {
     background-color: #e6e6e6;
+}
+
+.fa-globe-europe, .fa-lock {
+    margin-left: 5px;
 }
 
 a {
@@ -57,7 +81,7 @@ a {
 
 nav div a:hover {
     text-decoration: underline;
-    padding-left: 2%;
+    /* padding-left: 2%; */
 }
 
 main {
@@ -122,11 +146,38 @@ h3 {
 }
 
 .medalImg {
-    width: 15%;
+    width: 200px;
 }
 
 .secondOfferSection {
     background-color: #e6e6e6;
+    text-align: center;
+}
+
+#sendForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.ctaBtn {
+    background-color: #870aa0;
+    color: white;
+    border: none;
+    padding: 15px 35px 15px 35px;
+    font-family: sofia pro;
+    font-size: 1.5em;
+}
+
+.textInput {
+    border: none;
+    padding: 20px 35px 17px 35px;
+    font-family: sofia pro;
+    font-size: 1.2em;
+    /* width: 70px; */
+}
+
+.steps {
+    text-align: center;
 }
 
 .stepsimg {
@@ -153,14 +204,17 @@ h3 {
     text-align: center;
 }
 
-.contacts {
+footer {
     background-color: #2819ff;
+}
+
+.contacts {
     color: white;
     display: flex;
     flex-direction: column;
 }
 
-.contactsItems {
+.contactsItem {
     display: flex;
     flex-direction: column;
 }
@@ -171,6 +225,7 @@ h3 {
 }
 
 .socialMedia {
+    background-color: white;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -179,4 +234,112 @@ h3 {
 footer .fab {
     font-size: 50px;
     margin: 10px;
+}
+
+@media only screen and (min-width: 535px) {
+    .prenumereraForm {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .formDisplayBlock {
+        display: block;
+    }
+}
+
+
+@media only screen and (min-width: 822px) {
+
+    .mobile-none {
+        display: inline-block;
+    }
+
+    .deskop-none {
+        display: none;
+    }
+
+    .header-btns-container {
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #myLinks {
+        display: block;
+    }
+
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav a {
+        border-bottom: none;
+    }
+
+    main {
+        margin-top: 158px;
+    }
+
+    .sectionWidth {
+        width: 600px;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .moreplus {
+        margin-left: -35px;
+    }
+
+    .articleFlex {
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    .articleImgMargin {
+        margin-right: 60px;
+    }
+
+    .articleHeadingMarginTop {
+        margin-top: 0;
+    }
+
+}
+
+@media only screen and (min-width: 960px) {
+
+    .headerFlex {
+        padding: 20px 40px 20px 40px;
+    }
+
+    .nav {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .nav a {
+        padding: 20px 0px 20px 0px;
+    }
+
+    section {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .deskopWidth {
+        width: 80%;
+        margin: auto;
+    }
+
+    .contacts {
+        width: 60%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+    }
+
 }
