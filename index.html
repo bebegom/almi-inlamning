@@ -38,12 +38,12 @@
         <nav id="myLinks">
 
             <div class="nav deskopWidth">
-                <a href="#secondOfferSection">erbjudande</a>
-                <a href="">om oss</a>
-                <a href="#medal">utmärkelser</a>
-                <a href="#steps">steg/process</a>
-                <a href="#prenumerera">prenumerera</a>
-                <a href="">kontakta oss</a>
+                <!-- <a href="#secondOfferSection">erbjudande</a> -->
+                <a href="">Om Almi</a>
+                <a href="#medal">Nyheter</a>
+                <a href="#steps">Hur går det till</a>
+                <a href="#prenumerera">Prenumerera</a>
+                <a href="">Kontakta oss</a>
                 <a class="deskop-none" href="">In English<i class="fas fa-globe-europe"></i></a>
                 <a class="deskop-none" href="">Logga in<i class="fas fa-lock"></i></a>
             </div>
@@ -58,9 +58,9 @@
             <section class="firstOfferSection sectionWidth">
 
                 <a href="#secondOfferSection">
-                    <h1 id="h1">Rusta ditt företag för framtiden</h1>
-                    <h2 id="h2">Låna upp till 50 000 kr</h2>
-                    <h3 id="h3">läs mer</h3>
+                    <h1 class="paddingHover" id="h1">Rusta ditt företag för framtiden</h1>
+                    <h2 class="paddingHover" id="h2">Låna upp till 50 000 kr</h2>
+                    <h3 class="paddingHover" id="h3">läs mer</h3>
                 </a>
 
                 <img class="negativeMargin20" src="grafiska-element/pil-upp2-02.svg" alt="">
@@ -73,8 +73,8 @@
 
             <section class="more-about-almi sectionWidth">
                 <a class="aHover" href="">
-                    <h1>läs mer om Almi</h1>
-                    <h2>Företagslån, riskkapital och affärsutveckling för växande företag</h2>
+                    <h1 class="paddingHover">läs mer om Almi</h1>
+                    <h2 class="paddingHover">Företagslån, riskkapital och affärsutveckling för växande företag</h2>
                 </a>
 
                 <img class="negativeMargin20" src="images/woman-with-arrow.png" alt="">
@@ -130,13 +130,7 @@
 
                     </div>
 
-                    <!-- <form id="sendForm" action=""> -->
-                        <!-- <input class="textInput" type="email" name="" id="" placeholder="Din email"> -->
-
-                        <!-- <input class="textInput" type="text" name="" id="" placeholder="Beskriv din ansökan..."> -->
-
-                        <input class="ctaBtn" type="submit" value="Skicka in">
-                    <!-- </form> -->
+                    <input class="ctaBtn" type="submit" value="Skicka in">
 
                 </div>
             </section>
@@ -181,15 +175,15 @@
                     </div>
                 </div>
 
-                <input class="ctaBtn" type="submit" value="Skicka in">
+                <button class="ctaBtn">Skicka ansökan</button>
 
 
             </section>
 
             <section class="whatmore sectionWidth">
                 <a href="">
-                    <h1>Vad mer kan Almi erbjuda?</h1>
-                    <h2>möten, seminarium, dokument osv.</h2>
+                    <h1 class="paddingHover">Vad mer kan Almi erbjuda?</h1>
+                    <h2 class="paddingHover">möten, seminarium, dokument osv.</h2>
                 </a>
 
                 <img class="moreplus" src="grafiska-element/pil-lila-02.svg" alt="">
@@ -200,14 +194,19 @@
                 <h2>Prenumerera på våra utskick</h2>
                 
                 <form class="deskopWidth prenumereraForm" action="">
-                    <input class="textInput formDisplayBlock" type="text" placeholder="example@email.com">
-                    <button class="ctaBtn formDisplayBlock"><label for="">Prenumerera</label></button>
+
+                    <div class="emailDisplayFlex">
+                        <input class="textInput emailDisplayBlock" type="text" placeholder="example@email.com">
+                        <button class="ctaBtn emailDisplayBlock"><label for="">Prenumerera</label></button>
+                    </div>
+
                     <p>
                         För att prenumerera på vårt nyhetsbrev och andra utskick behöver du godkänna vår hantering av personuppgifter.
                     </p>
     
                     <input required type="checkbox" name="" id="agreed">
                     <label for="agreed">Jag samtycker</label>
+
                 </form>
 
 

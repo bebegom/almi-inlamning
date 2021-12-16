@@ -11,14 +11,13 @@ function myFunction() {
   //   document.getElementById("searchInput").style.display = "block";
   // }
 
-document.querySelector('#searchArea').addEventListener('click', e => {
 
+document.querySelector('#searchArea').addEventListener('click', e => {
   if ( e.target === document.getElementById("searchInput") || document.getElementById("searchSpan") ) {
     document.getElementById("searchInput").style.display = "block";
   } else {
 
   }
-
 })
 
 
