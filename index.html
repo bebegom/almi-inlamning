@@ -17,35 +17,35 @@
 
             <div class="header-btns-container">
 
-                <span id="searchArea">
-                <!-- <a class="searchText" href=""> -->
-                    <input id="searchInput" type="search" name="" id="">
+                <span id="searchArea" onclick="myFunctionSearch()">
                     <span id="searchSpan" class="mobile-none">Sök</span>
                     <i onclick="showSearchInput()" class="fas fa-search search"></i>
-                <!-- </a> -->
                 </span>
 
-                <a class="mobile-none" href="">Almi Invest</a>
+                <a class="mobile-none" href="#">Almi Invest</a>
 
-                <a class="mobile-none" href="">In English<i class="fas fa-globe-europe"></i></a>
+                <a class="mobile-none" href="#">In English<i class="fas fa-globe-europe"></i></a>
 
-                <a class="mobile-none" href="">Logga in<i class="fas fa-lock"></i></a>
+                <a class="mobile-none" href="#">Logga in<i class="fas fa-lock"></i></a>
 
                 <a href="javascript:void(0);" class="icon deskop-none" onclick="myFunction()"><i class="fas fa-bars bars"></i></a>
             </div>
         </div>
 
+        <div id="searchBarDiv" class="searchBarDiv">
+            <input id="searchInput" type="search" name="searchInput" placeholder="sök">
+        </div>
+
         <nav id="myLinks">
 
             <div class="nav deskopWidth">
-                <!-- <a href="#secondOfferSection">erbjudande</a> -->
                 <a href="#moreAboutAlmi">Om Almi</a>
                 <a href="#medal">Nyheter</a>
-                <a href="#steps">Hur går det till</a>
+                <a href="#steps">Så funkar det</a>
                 <a href="#prenumerera">Prenumerera</a>
                 <a href="#contacts">Kontakta oss</a>
-                <a class="deskop-none" href="">In English<i class="fas fa-globe-europe"></i></a>
-                <a class="deskop-none" href="">Logga in<i class="fas fa-lock"></i></a>
+                <a class="deskop-none" href="#">In English<i class="fas fa-globe-europe"></i></a>
+                <a class="deskop-none" href="#">Logga in<i class="fas fa-lock"></i></a>
             </div>
     
         </nav>
@@ -55,15 +55,15 @@
 
     <main>
 
-            <section class="firstOfferSection sectionWidth">
+            <section class="firstOfferSection sectionWidth transition">
 
                 <a href="#secondOfferSection">
-                    <h1 class="paddingHover" id="h1">Rusta ditt företag för framtiden</h1>
-                    <h2 class="paddingHover" id="h2">Låna upp till 50 000 kr</h2>
-                    <h3 class="paddingHover" id="h3">läs mer</h3>
+                    <h1 class="paddingHover">Rusta ditt företag för framtiden</h1>
+                    <h2 class="paddingHover">Låna upp till 50 000 kr</h2>
+                    <h3 class="paddingHover">läs mer</h3>
                 </a>
 
-                <img class="negativeMargin20" src="grafiska-element/pil-upp2-02.svg" alt="">
+                <img class="circleMargin" src="grafiska-element/circle-04.svg" alt="">
 
             </section>
 
@@ -71,8 +71,8 @@
                 <h1>Sveriges mest aktiva företagsutvecklare</h1>
             </section>
 
-            <section id="moreAboutAlmi" class="more-about-almi sectionWidth">
-                <a class="aHover" href="">
+            <section id="moreAboutAlmi" class="more-about-almi sectionWidth transition">
+                <a class="aHover" href="#">
                     <h1 class="paddingHover">läs mer om Almi</h1>
                     <h2 class="paddingHover">Företagslån, riskkapital och affärsutveckling för växande företag</h2>
                 </a>
@@ -82,15 +82,17 @@
             </section>
 
             <section id="medal" class="deskopWidth">
-                <a href=""><h1>Nyheter</h1></a>
+                <a href="#"><h1>Nyheter</h1></a>
 
                 <div class="medal-article-container">
                     <article class="medal-article articleFlex">
                         <img class="medalImg articleImgMargin" src="images/deal.jpg" alt="">
 
                         <div>
-                            <h3 class="articleHeadingMarginTop">Digitaltolk kammade hem priset Årets Framtisgasell och Supergasell</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam facere id, soluta amet sint maiores vitae accusantium hic officiis commodi saepe velit exercitationem odit, aliquam sequi? Exercitationem dolorem id excepturi.</p>
+                            <a href="#">
+                                <h2 class="articleHeadingMarginTop">Digitaltolk kammade hem priset Årets Framtisgasell och Supergasell</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam facere id, soluta amet sint maiores vitae accusantium hic officiis commodi saepe velit exercitationem odit, aliquam sequi? Exercitationem dolorem id excepturi.</p>
+                            </a>
                         </div>
                     </article>
 
@@ -98,39 +100,42 @@
                         <img class="medalImg articleImgMargin" src="images/medal.jpg" alt="">
 
                         <div>
-                            <h3 class="articleHeadingMarginTop">Almi blir utsedda till ett av Sveriges Karriärföretag 2022</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam facere id, soluta amet sint maiores vitae accusantium hic officiis commodi saepe velit exercitationem odit, aliquam sequi? Exercitationem dolorem id excepturi.</p>
+                            <a href="#">
+                                <h2 class="articleHeadingMarginTop">Almi blir utsedda till ett av Sveriges Karriärföretag 2022</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam facere id, soluta amet sint maiores vitae accusantium hic officiis commodi saepe velit exercitationem odit, aliquam sequi? Exercitationem dolorem id excepturi.</p>
+                            </a>
                         </div>
                     </article>
+                </div>
 
             </section>
 
             <section id="secondOfferSection" class="secondOfferSection ">
                 <div class="deskopWidth sectionWidth">
 
-                    <h1>Ta lån upp till 50 000 kr</h1>
-                    <p>Vi hjälper dig och ditt nya företag (upp till 3 år) växa. Välj en plan medan och hör av dig till oss.</p>
+                    <h1>Ta lån upp till 50 000 SEK</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore minima accusamus ipsam obcaecati ipsa nesciunt sit. Repudiandae error ab at eos hic temporibus, alias laudantium nam adipisci vitae cupiditate ea.</p>
                     
                     <div class="loans-container">
 
                         <div class="loan s-loan">
-                            <h3>10 000</h3>
+                            <h2>10 000 SEK</h2>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, aspernatur quas! Ipsum dolore culpa at beatae maxime sint officiis minima sapiente nihil, voluptates rerum enim quas laborum dignissimos tempore? Numquam!</p>
                         </div>
                         
                         <div class="loan m-loan">
-                            <h3>25 000</h3>
+                            <h2>25 000 SEK</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laudantium dolor, voluptate, atque qui eius facere maiores necessitatibus nisi perspiciatis quaerat temporibus cupiditate. Adipisci rerum, eveniet consequatur fuga nam velit?</p>
                         </div>
                         
                         <div class="loan l-loan">
-                            <h3>50 000</h3>
+                            <h2>50 000 SEK</h2>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, corporis exercitationem maiores pariatur temporibus perferendis aperiam adipisci quibusdam odit consectetur ipsam eligendi facilis expedita hic, sint debitis velit porro. Distinctio.</p>
                         </div>
 
                     </div>
 
-                    <button class="ctaBtn">Skicka ansökan</button>
+                    <button class="ctaBtn ctaBtnMargin">Skicka ansökan</button>
 
                 </div>
             </section>
@@ -140,6 +145,7 @@
                 <img class="stepsimg" src="grafiska-element/steg.png" alt="">
 
                 <div class="oneStep articleFlex">
+
                     <img class="stepImg articleImgMargin" src="grafiska-element/step1-04.svg" alt="">
 
                     <div class="stepText">
@@ -175,13 +181,13 @@
                     </div>
                 </div>
 
-                <button class="ctaBtn">Skicka ansökan</button>
+                <button class="ctaBtn ctaBtnMargin">Skicka ansökan</button>
 
 
             </section>
 
-            <section class="whatmore sectionWidth">
-                <a href="">
+            <section class="whatmore sectionWidth transition">
+                <a href="#">
                     <h1 class="paddingHover">Vad mer kan Almi erbjuda?</h1>
                     <h2 class="paddingHover">möten, seminarium, dokument osv.</h2>
                 </a>
@@ -191,20 +197,20 @@
 
             <section id="prenumerera" class="prenumerera">
                 
-                <h2>Prenumerera på våra utskick</h2>
+                <h1>Prenumerera på våra utskick</h1>
                 
-                <form class="deskopWidth prenumereraForm" action="">
+                <form class="deskopWidth prenumereraForm" action="#">
 
                     <div class="emailDisplayFlex">
-                        <input class="textInput emailDisplayBlock" type="text" placeholder="example@email.com">
-                        <button class="ctaBtn emailDisplayBlock"><label for="">Prenumerera</label></button>
+                        <input class="textInput emailDisplayBlock" id="email" type="email" placeholder="example@email.com">
+                        <button class="ctaBtn emailDisplayBlock">Prenumerera</button>
                     </div>
 
                     <p>
                         För att prenumerera på vårt nyhetsbrev och andra utskick behöver du godkänna vår hantering av personuppgifter.
                     </p>
     
-                    <input required type="checkbox" name="" id="agreed">
+                    <input required type="checkbox" name="agreed" id="agreed">
                     <label for="agreed">Jag samtycker</label>
 
                 </form>
@@ -220,36 +226,36 @@
         <section id="contacts" class="contacts">
                
             <div class="contactsItem">
-                <h3>Våra tjänster</h3>
+                <h1>Våra tjänster</h1>
 
-                <a href="">Affärsutveckling</a>
-                <a href="">Hållbarhet</a>
-                <a href="">Almi Invest</a>
+                <a href="#">Affärsutveckling</a>
+                <a href="#">Hållbarhet</a>
+                <a href="#">Almi Invest</a>
             </div>
 
             <div class="contactsItem">
-                <h3>Kort om Almi</h3>
+                <h1>Kort om Almi</h1>
 
-                <a href="">Lån</a>
-                <a href="">Om webbplatsen</a>
-                <a href="">Riskkapital</a>
+                <a href="#">Lån</a>
+                <a href="#">Om webbplatsen</a>
+                <a href="#">Riskkapital</a>
             </div>
 
             <div class="contactsItem">
-                <h3>Kontakt</h3>
+                <h1>Kontakt</h1>
 
-                <a href="">Kontakta oss</a>
-                <a href="">Våra rådgivare</a>
-                <a href="">Karriär</a>
+                <a href="#">Kontakta oss</a>
+                <a href="#">Våra rådgivare</a>
+                <a href="#">Karriär</a>
             </div>
 
         </section>
 
-        <section class="socialMedia">
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-        </section>
+        <div class="socialMediaIcons">
+            <a class="socialMediaIcon" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a class="socialMediaIcon" href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+            <a class="socialMediaIcon" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+        </div>
     </footer>
 
     <script src="script.js"></script>
