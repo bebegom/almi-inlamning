@@ -177,6 +177,7 @@ h3 {
 
 .stepsimg {
     width: 100%;
+    margin: 20px 0px 20px 0px;
 }
 
 .stepImg {
@@ -331,8 +332,9 @@ footer .fab {
     .sectionWidth {
         width: 600px;
         margin: auto;
-        margin-top: 30px;
-        margin-bottom: 30px;
+
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     .moreplus {
@@ -375,6 +377,10 @@ footer .fab {
     section {
         padding-left: 40px;
         padding-right: 40px;
+    }
+
+    .moreplus {
+        margin-left: -55px;
     }
 
     .deskopWidth {
